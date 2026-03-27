@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pdf2docx
+PyMuPDF
+pytesseract
+Pillow
+python-docx
+pdfminer.six
+python-multipart
+aiofiles

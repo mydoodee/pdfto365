@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF-TO365 — แปลง PDF เป็น Word ภาษาไทย มืออาชีพ</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/337/337946.png">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="icon">📄</span>
+            <h1>PDF-TO365</h1>
+        </div>
+        <p class="subtitle">ระบบแปลง PDF เป็น Word ระดับโปร รองรับภาษาไทยสมบูรณ์</p>
+    </header>
+
+    <main class="container">
+        <!-- Drag and Drop Area -->
+        <div id="drop-zone" class="drop-zone">
+            <div class="drop-content">
+                <div class="upload-icon">⬆️</div>
+                <h3>ลากไฟล์ PDF มาวางที่นี่</h3>
+                <p>หรือคลิกเพื่อเลือกไฟล์จากเครื่อง</p>
+                <input type="file" id="file-input" accept=".pdf" multiple hidden>
+                <div class="badge">เร็ว • แม่นยำ • ภาษาไทย</div>
+            </div>
+        </div>
+
+        <!-- File List Section -->
+        <section id="file-list-container" class="file-list-container hidden">
+            <div class="section-title">
+                <h2>คิวงานปัจจุบัน</h2>
+                <button id="clear-all" class="btn-text">ล้างทั้งหมด</button>
+            </div>
+            <div id="file-queue" class="file-queue">
+                <!-- File items dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features-grid">
+            <div class="feature-card">
+                <span class="f-icon">🇹🇭</span>
+                <h4>Thai OCR</h4>
+                <p>รองรับไฟล์สแกน (Scanned PDF) ด้วยระบบ AI OCR ภาษาไทยแม่นยำสูง</p>
+            </div>
+            <div class="feature-card">
+                <span class="f-icon">📐</span>
+                <h4>Layout Preservation</h4>
+                <p>รักษาโครงสร้างหน้า ตาราง และรูปภาพ ให้ใกล้เคียงต้นฉบับมากที่สุด</p>
+            </div>
+            <div class="feature-card">
+                <span class="f-icon">⚡</span>
+                <h4>Batch Processing</h4>
+                <p>อัพโหลดและแปลงไฟล์หลายๆ พร้อมกันในคราวเดียว ประหยัดเวลา</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PDF-TO365 — High Fidelity PDF to Word Thai Engine</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
